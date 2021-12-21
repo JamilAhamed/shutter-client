@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Sidebar from '../../Shared/Sidebar/Sidebar';
 import './ManageOrder.css'
 import TableRow from "./TableRow/TableRow";
-import loader from '../../../images/infinity_loop_-_logo.gif'
+ import loader from '../../../images/infinity_loop_-_logo.gif'
 import toast, { Toaster } from 'react-hot-toast';
 import swal from 'sweetalert';
 import { useHistory } from 'react-router';
@@ -77,7 +77,6 @@ const ManageOrder = () => {
                         icon: "success",
                     });
                     setUpdate(!update);
-
                 }
             })
 
@@ -92,7 +91,7 @@ const ManageOrder = () => {
                 </div>
 
                 {allOrders.length === 0 ?
-                    <img style={{ width: "150px" }} src={loader} alt="" /> :
+                     <img style={{ width: "150px" }} src={loader} alt="" /> :
                     <table className="table-container">
                         <thead>
                             <th>Sr.</th>
